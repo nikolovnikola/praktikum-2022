@@ -1,6 +1,143 @@
-<body>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nikola traveller</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="src/css/niko-style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+        <script src="dist/app.js"></script>
+    </head>
 
-  </head>
-
-</body>
+	<body>
+    <nav class="navbar navbar-expand-lg navbar-bg-color">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="logo.png" width="100" height="50" alt="Niko travel"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link link-dark active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row mt-2 mt-md-5">
+        <div class="col-12 col-md-4 mt-2 mt-md-0">
+            <div class="card h-100">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPass" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPass">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn">Help</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8">
+          <img src="https://vacationidea.com/pix/img25Hy8R/articles/best-exotic-places-to-visit_t5.jpg"
+              class="img-thumbnail w-100 bg-danger" alt="Exotic">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 col-md-3 mb-2 mb-md-0">
+            <div class="main-section-container d-flex flex-column align-items-center">
+                <i class="bi bi-airplane" style="font-size: 5rem;"></i>
+                <h3>Airplane tickets</h3>
+                <p class="text-center d-none d-md-block">We can find you the cheapest airplane tickets to your destination!</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 mb-2 mb-md-0">
+            <div class="main-section-container d-flex flex-column align-items-center">
+                <i class="bi bi-house" style="font-size: 5rem;"></i>
+                <h3>Accommodation</h3>
+                <p class="text-center d-none d-md-block">Get the best offer for your dream accommodation!</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 mb-2 mb-md-0">
+            <div class="main-section-container d-flex flex-column align-items-center">
+                <i class="bi bi-sun" style="font-size: 5rem;"></i>
+                <h3>Summer vacations</h3>
+                <p class="text-center d-none d-md-block">We can find you the best summer vacation packages!</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 mb-2 mb-md-0">
+          <div class="main-section-container d-flex flex-column align-items-center">
+              <i class="bi bi-snow2" style="font-size: 5rem;"></i>
+              <h3>Winter vacations</h3>
+              <p class="text-center d-none d-md-block">Dream of winter adventure? You have found the right place to book!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2 mt-md-6">
+        <div class="col-12 col-md-6">
+          <div class="p-5 text-center bg-image" style="background-image: url('https://destateparks.com/wwwroot/images/dayCamps/SummerCamp-Hero.jpg'); height: 20rem;">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                  <h1 class="mb-3">Summer camps</h1>
+                  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Book your summer camp here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="p-5 text-center bg-image" style="background-image: url('https://www.rei.com/dam/van_dragt_022618_0002_winter_camp_hero_lg.jpg'); height: 20rem;">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                  <h1 class="mb-3">Winter camps</h1>
+                  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Book your winter camp here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height:2rem;"></div>
+    <footer class="bg-secondary text-center text-white">
+      <div class="container p-3">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Address</h5>
+            <p><i class="bi bi-house me-3 text-secondary"></i>Plovdiv, Bulgaria</p>
+            <p><i class="bi bi-envelope me-3 text-secondary"></i>info@nikotravel.com</p>
+            <p><i class="bi bi-phone me-3 text-secondary"></i>+359 888 11 10 12</p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Privacy</h5>
+            <p>We are GDPR certified agency. For more details on our privacy policies, <a class="link-dark" href="#">click here</a>!</p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Social media</h5>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-google"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-linkedin"></i></a>
+          </div>
+      </div>
+    </footer>
+	</body>
+	
+</html>
